@@ -1,0 +1,12 @@
+#!/bin/sh
+
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+
+echo
+echo "================================="
+echo " Embedded Linux Lab - Boot OK"
+echo "================================="
+echo
+
+exec /bin/sh
